@@ -1,0 +1,146 @@
+.galeria-work{
+    width: 100%;
+    background: url(../img/b2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 70;
+}
+
+.botones-work{
+    overflow: hidden;
+}
+
+.botones-work li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 45px;
+    padding: 6px 12px;
+    border: 2px solid green;
+    list-style: none;
+    background: rgb(193, 207, 193);
+    /* padding: 15px;
+    margin: 0 30px;
+    margin-bottom: 30px; */
+
+}
+
+
+.botones-work li:hover{
+    background: orange;
+    color: green;
+    cursor: pointer;
+}
+
+.botones-work .active{
+    background: green;
+}
+
+.galeria-work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    
+}
+
+
+.work {
+    /* margin-top: 0px; */
+    margin-top: 35%;
+}
+
+.work>h3{
+    margin-bottom: 40px;
+    font-size: 60px;
+    margin-left: 32%;
+}
+
+.work>p{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+ .cont-work{
+    width: 30%;
+    height: 300px;
+    box-shadow:  0 0 6px 0 rgba(0,0,0,.5);
+      overflow: hidden;  
+    margin-bottom: 45px;
+    text-align: center;
+} 
+
+.img-work{
+    height: 87%;
+    width: 100%;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.img-work:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.img-work img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-work{
+    height: 10%;
+}
+
+.text-work h4{
+line-height: 20px;
+}
+
+.banner-2 .work>h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* icono */
+
+
+/* .botones-work ul .filter{
+    margin: auto;
+} */
+
+/* ESTILOS BANNER    */
+
+.banner-2{
+    margin-top: 50px;
+    background: url('../img/5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin-bottom: 50px;
+    float: left;
+    width: 100%;
+    height: 382px;
+}
+
+.banner-2 h3{
+    font-size: 40px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    /* border-bottom: 3px solid #ffffff; */
+}
+
+.banner-2 a{
+    color: green;
+    
+}
+
+.work{
+    background: rgba(0, 0, 0, .1);
+}
+

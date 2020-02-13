@@ -1,0 +1,819 @@
+@import url('css/trabajo.css');
+@import url('css/lista-precios.css');
+@import url('css/redes.css');
+@import url('css/personas.css');
+@import url('css/slider.css');
+@import url('css/album.css');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    border-width:thin;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    /* background: #f4f4f4; */
+}
+
+img .logo {
+    vertical-align: top;
+    }
+    
+
+/* Estilos  header */
+
+header {
+     overflow-y:hidden;
+    overflow-x: hidden;
+    width: 100%;
+    height: 800px;
+    background: url(img/codigo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: movimiento 10s infinite linear alternate;
+}
+
+.sombre_header{
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 800px;
+    background: rgba(0, 0, 0, .5);
+}
+
+@keyframes movimiento {
+    from {
+        background-position: bottom, left
+    }
+
+    to {
+        background-position: top, right;
+    }
+}
+
+/* estilos menu */
+
+
+nav {
+
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0.5);
+    z-index: 100;
+
+}
+
+.nav1 {
+    background: rgba(0, 0, 0, .5);
+    height: 80px;
+    color: rgb(108, 146, 108);
+
+}
+
+.nav2 {
+    background: var(--fondo);
+    height: 100px;
+    color: #000;
+    background: #fff;
+}
+
+
+.contenedor-nav {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    height: inherit;
+    overflow: hidden;
+}
+
+nav .enlaces a {
+    margin: 0 25px;
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 2px;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+}
+
+nav .enlaces a:hover {
+    border-bottom: 3px solid #1498a4;
+    transition: 0.6s;
+}
+
+.logo,
+.logo img {
+    height: 80px;
+}
+
+.icono {
+    color: #000;
+    display: none;
+    font-size: 35px;
+    padding: 30px 20px;
+    z-index: 100;
+    margin: auto;
+    background: transparent;
+
+}
+
+/* testo */
+.textos {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: green;
+    overflow: hidden;
+    text-align: center;
+}
+
+.textos .alex{
+    color: green;
+}
+
+.textos>h1 {
+    font-size: 80px;
+}
+
+.textos>h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+
+
+.texto1 {
+    margin-top: 200px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 1.6rem;
+}
+
+/* FORMULARIO */
+
+.boton1 {
+    border: 3px solid #fff;
+    margin-left: 20px;
+    height: 45px;
+    background: green;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+
+}
+
+.boton1:hover {
+    background: rgb(122, 139, 122);
+    color: beige;
+}
+
+#boletin {
+    padding: 15px;
+    color: #fff;
+    background: rgba(0, 0, 0, .9);
+    border-top: 3px solid green;
+}
+
+#boletin h1 {
+    float: left;
+}
+
+#boletin form {
+    float: right;
+    margin-top: 15px;
+}
+
+#boletin input[type='email'] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* cajas */
+
+#cajas .caja {
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    z-index: 60;
+}
+
+#imagen{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+#cajas .caja>img:hover {
+    cursor: pointer;
+     background: rgb(243, 240, 240); 
+    width: 220px;
+    height: 220px;
+}
+
+#cajas .container>h3 {
+    text-align: center;
+    margin: 40px 0;
+    color: green;
+    
+}
+
+#cajas .container>h3,
+p {
+    text-align: center;
+    font-size: 22px;
+}
+
+#cajas .container>h3 {
+    font-size: 35px;
+}
+
+
+
+/* ESTILOS RESPONSIVE DE LA CAJA DE PRECIOS */
+@media screen and (max-width:1000px) {
+    .contenedor {
+        width: 50%;
+        margin: auto;
+        height: 300px;
+        flex-wrap: wrap;
+    }
+
+    .tabla {
+        width: 45%;
+        flex-grow: initial;
+        max-width: none;
+        margin-bottom: 30px;
+
+    }
+
+    .tabla h2 {
+        margin-top: 40px;
+    }
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    .contenedor {
+        width: 50%;
+        margin: auto;
+        height: 300px;
+        flex-wrap: wrap;
+    }
+
+    .tabla {
+        padding: 30px;
+        width: 45%;
+        flex-grow: initial;
+        max-width: none;
+        margin-bottom: 30px;
+
+    }
+
+
+    .tabla h2 {
+        margin-top: 40px;
+    }
+
+    .tabla>h2 {
+        margin-top: 40px;
+    }
+}
+
+
+
+@media screen and (max-width:550px) {
+    .contenedor {
+        width: 50%;
+        margin: auto;
+        height: 300px;
+        flex-wrap: wrap;
+    }
+
+    .tabla {
+        width: 85%;
+        padding: 20px;
+
+    }
+
+    .tabla h2 {
+        margin-top: 40px;
+    }
+    .servicios{
+        display: inline-block;
+    }
+    .copy{
+        font-size: 17px;
+    }
+    .our-projects{
+        margin-top: 0;
+    }
+    .wrapper {
+        margin-top: 700px;
+    }
+
+    .textos {
+        font-size: 20px;
+    }
+
+    .testimonial-tex {
+        text-align: center;
+    }
+
+    #boletin form {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .wrapper {
+        margin-top: 210px;
+    }
+
+    .footer .iconos a {
+        width: 100%;
+        font-size: 20px;
+        margin: 0;
+    }
+}
+
+/* responsive formulario y personas */
+
+ @media only screen and (max-width:912px) {
+    .fundadores {
+        margin-top: 50px;
+
+    }
+    .texto-naranja{
+        margin-top: 100px;
+    }
+
+    .content-fundadores {
+        display: block;
+    }
+
+    .fundadores>h2 {
+        position: static;
+        color: inherit;
+        margin-bottom: 20px;
+    }
+
+    .fundadores .clara-container {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .fundadores .oscar-container {
+        padding: 20px;
+        width: 100%;
+
+    }
+
+    footer {
+        margin: auto;
+        width: 100%;
+        margin-left: 20px;
+
+    }
+
+    footer .boxfrom {
+        margin: auto;
+        width: 40%;
+
+
+    }
+
+    .boxfrom input {
+        width: 100%;
+
+    }
+
+    .boxfrom textarea {
+        width: 100%;
+    }
+
+    .boxfrom h2 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    footer {
+        padding-top: 200px;
+    }
+    
+}
+
+/* responsive del header y el nav */
+@media screen and (max-width:700px) {
+
+    /* header #marca,
+  header nav,
+  header nav li, */
+    #boletin h1,
+    #boletin form,
+    #cajas .caja,
+    article#main-col,
+    aside#lateral {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* header{
+    padding-bottom:20px;
+  } */
+
+    #boletin h1 {
+        margin-top: 40px;
+    }
+
+    #boletin button {
+        display: block;
+        width: 100%;
+    }
+
+    #boletin form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+        width: 98%;
+    }
+
+}
+
+
+ @media screen and (max-width:500px) { 
+
+    #boletin h1,
+    #boletin form,
+    #cajas .caja,
+    article#main-col,
+    aside#lateral {
+        float: none;
+        text-align: center;
+        width: 100%;}
+
+.icono{
+    margin-right: 200px;
+    color: #fff;
+    display: flex;
+    z-index: 99;
+}
+
+    #boletin h1 {
+        margin-top: 40px;
+    }
+
+    #boletin button {
+        display: block;
+        width: 100%;
+    }
+
+    #boletin form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+        width: 98%;
+    }
+
+
+
+
+ @media screen and (max-width:700px) { 
+
+    .nav2 {
+        background: #fff;
+        color: #fff;
+    }
+    .wrapper{
+        margin-top: 500px;
+    }
+    
+
+    .icono {
+        position: sticky;
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .enlaces {
+        position: fixed;
+        top: 80px;
+        background: #2c3e50;
+        left: 0;
+        height: 100%;
+        transition: 1s;
+        /* esto es para esconder el menu */
+        width: 0;
+        overflow: hidden;
+    }
+
+    .enlaces a {
+        /* el display block es para ponerlos uno debajo del otro, pero hay que definnir su ancho antes en este caso */
+        display: block;
+        width: 100%;
+        padding: 20px;
+        margin: 10px 0;
+        text-align: center;
+        background: #34495e;
+        color: #fff;
+    }
+
+    .textos>h1 {
+        font-size: 70px;
+    }
+
+    .textos>h2 {
+        font-size: 35px;
+    }
+
+    .galeria-work .img-work {
+        /* width: 48%; */
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        margin-top: 290px;
+    }
+
+    .tex-1 {
+        margin-top: 50px;
+    }
+
+
+ @media screen and (max-width:450px) { 
+    /* .wrapper {
+        margin-top: 0;
+    } */
+    /* body{
+        background: green;
+    } */
+    .iconos{
+        width: 100%;
+        margin-top: 80px;
+    }
+    .copy{
+        margin-top: 40px;
+    }
+    .abajo{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    footer{
+        width: 100%;
+    }
+    .marca-logo{
+        width: 50px;
+        height: 50px;
+    }
+    .banner-2{
+        width: 100%;
+        height: 120px;
+    }
+
+    .testimonial-tex {
+        text-align: center;
+        margin-top: 0;
+    }
+    .servicios{
+        display: block;
+        width: 100%;
+    }
+    .servicios h4{
+        font-size: 25px;
+    }
+    .about .after{
+        font-size: 30px;
+    }
+    .contenedor_1 >h3{
+        font-size: 40px;
+    }
+    .container{
+        overflow: hidden;
+       padding-bottom: 56.25%;
+       padding-top: 30px;
+        position: relative;
+        width:100%; 
+         height: 0;
+     }
+     .abajo{
+         overflow: hidden;
+     }
+     #boletin h1,
+  #boletin form,
+  article#main-col,
+  aside#lateral{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+ .textos>h1{
+     font-size: 30px;
+ }
+ .sombre_header{
+     height: 400px;
+ }
+
+ .textos>h2{
+    font-size: 15px;
+}
+#boletin{
+    margin-bottom: -40px;
+    height: 40px;
+}
+header{
+    width: 100%;
+    height: 400px;
+}
+
+
+#cajas{
+    margin-top: -110px;
+    height: 100%;
+    float:none;
+    text-align:center;
+    width:100%;
+}
+.container{
+    width: 100%;
+    height: 1200px;
+    /* margin: 40px 0; */
+}
+.work {
+    margin-top: -100px;
+    width: 100%;
+    height: 800px;
+}
+.galeria-work{
+    width: 100%;
+   height: 100%px;
+}
+.cont-work{
+    height: 180px;
+}
+.img-work{
+    margin-top: 10px;
+    width: 100%;
+    height: 125px;
+}
+
+.marca-logo{
+margin: 0;
+padding: 0;
+    width: 100%;
+    height: 0;
+    margin-bottom: 20px;
+}
+.copy{
+    width: 100%;
+    margin-bottom: -80px;
+    font-size: 15px;
+
+}
+.our-projects{
+    margin-top: -250px;
+    
+}
+.fundadores{
+margin-top: -37px;
+}
+
+ }
+
+@media screen and (max-width:500px) {
+    .wrapper {
+        margin-top: 700px;
+    }
+
+    .textos {
+        font-size: 20px;
+    }
+
+    .testimonial-tex {
+        text-align: center;
+    }
+
+    #boletin form {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .wrapper {
+        margin-top: 210px;
+    }
+
+    .footer .iconos a {
+        width: 100%;
+        font-size: 20px;
+        margin: 0;
+    }
+    .abajo{
+        width: 100%;
+        padding-right: 0px;
+        height: 200px;
+    }
+    .about{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .caja-servicios .h4{
+        font-size: 15px;
+    }
+    #boletin h1,
+  #boletin form,
+  #cajas .caja,
+  article#main-col,
+  aside#lateral{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+} 
+
+@media screen and (max-width:400px){
+    /* body{
+        background: green;
+    } */
+    .our-projects .container-project .project-img img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .our-projects .container-project .project-title h2{
+        font-size: 25px;
+    }
+    .iconos{
+        width: 40px;
+        height: 40px;
+    }
+    h1,
+    h2,
+    h3{
+        font-size: 90px;
+    }
+
+    #cajas{
+       width: 100%;
+
+    }
+
+
+    #boletin h1,
+  #boletin form,
+  #cajas .caja,
+  article#main-col,
+  aside#lateral{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+  .contenedor_1>h3{
+      font-size: 25px;
+  }
+  .contenedor_1>.after{
+      font-size: 15px;
+  }
+  .grande{
+font-size: 20px;
+  }
+
+    
+}

@@ -1,0 +1,393 @@
+
+.fundadores{
+    background: url(../img1/bombillo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover; 
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin: 0;
+
+}
+
+.fundadores>h2{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.content-fundadores{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.clara-container{
+    position: relative;
+    flex-wrap: 1;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* background: rgb(171, 236, 171); */
+    cursor: pointer;
+    width: 50%;
+}
+
+.fundadores .clara-container:hover{
+flex-grow: 5;
+}
+
+.fundadores .clara-container .card{
+    max-width: 300px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.clara-container .card .clara-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.clara-container .card .clara-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clara-container .card h2{
+    margin: 30px 0;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+
+.ost{
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.clara-container .card a{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    }
+
+    .clara-container .card a:hover{
+        background: #ffedff;
+        border: 1px solid green;
+        color: green;
+    }
+
+
+
+
+    
+/* ESTILOS DEL OTRO LADO */
+
+.fundadores .oscar-container{
+    position: relative;
+    flex-grow: 1;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* background: rgb(204, 204, 109); */
+    cursor: pointer;
+    width: 30%;
+}
+
+.fundadores .oscar-container:hover{
+    flex-grow: 5;
+
+}
+.fundadores .oscar-container .card{
+    max-width: 300px;
+    text-align: center;
+    transition: 0.5s;
+    }
+
+    .oscar-container .card .img-oscar{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .oscar-container .card .img-oscar img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .oscar-container .card h2{
+        margin: 30px 0px;
+        color: #ffffff;
+        font-weight: 300;
+    }
+
+    .oscar-container .card > a{
+        width: 150px;
+        height: 50px;
+        border:1px solid #fff;
+        background: transparent;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        padding:10px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .oscar-container .card > a:hover{
+        background: #ffedff;
+        border:1px solid green;
+        color: green;
+    }
+
+
+
+
+/* Footer */
+
+
+article{
+    /* PARA HACER UN PARALLAX  */
+    background: url('../img/game.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+article .boxfrom{
+    width: auto;
+    height: auto;
+    padding: 50px;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    }
+
+    .boxfrom h2{
+        font-size: 50px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+
+    }
+
+    .boxfrom label{
+        color: #ffffff;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+
+    .boxfrom input{
+        margin: 10px 0px 20px 0;
+        padding: 0 20px;
+        width: 700px;
+        height: 40px;
+        border-radius: 24px;
+        outline: none;
+        border: 2px solid green;
+        font-size: 20px;
+        text-align: center;
+        background: rgba(0, 0, 0, .5);
+
+    }
+
+    .boxfrom input:focus{
+        background: #ffffff;
+        color: #000;
+        transition: 0.25s;
+
+    }
+
+    .boxfrom input::placeholder{
+        color: #ffffff;
+
+    }
+
+    .boxfrom textarea{
+        width: 700px;
+        height: 120px;
+        margin: 10px 0 20px 0;
+        border-radius: 26px;
+        outline: none;
+        border: 2px solid green;
+        font-size: 15px;
+        background: rgba(0, 0, 0, .5);
+        padding: 13px;
+
+    }
+
+    .boxfrom textarea:focus{
+        background: #ffffff;
+        color: #000;
+        transition: 0.25s;
+    }
+
+    .boxfrom textarea::placeholder{
+        color: #fff;
+
+    }
+
+    .boxfrom #send{
+        width: 100px;
+        height: 50px;
+        border-radius: 24px;
+        outline: none;
+        border: 2px solid green;
+        background: rgba(0, 0, 0, .5);
+        cursor: pointer;
+        transition: 0.25s;
+
+    }
+
+    .boxfrom #send a{
+       margin: 0 auto;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 10px;
+        text-transform: uppercase;
+        text-align: center;
+
+    }
+
+    .boxfrom #send:hover{
+        border: 2px solid #ffffff;
+        background: green;
+    }
+
+
+
+footer{
+background: url('../img/black.jpg');
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+
+
+}
+
+.abajo{
+    width: 100%;
+}
+   
+.marca-logo{
+        width: 40%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+.marca-logo img{
+    width: 100%;
+}
+
+.iconos{
+    display: flex;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 80px;
+}
+
+footer .iconos a{
+ display: flex;
+ width: 100px;
+ height: 100px;   
+text-decoration: none;
+background: #fff;
+align-items: center;
+justify-content: center;
+margin: 0 20px;
+border-radius: 100px;
+margin-bottom: 90px;
+}
+
+.icon-what{
+ color: green;
+
+   }
+
+.icon-face-official{
+    color: rgb(55, 55, 110);}
+
+
+.icon-twitter-1{
+    color:  rgb(99, 175, 189);
+}
+
+
+    .icon-what:hover{
+        background: green;
+       
+          }
+       
+       
+       .icon-facebook-official:hover{
+           background:  rgb(55, 55, 110);}
+
+           .icon-twitter-1:hover{
+            background:  rgb(99, 175, 189);
+    
+        }
+
+
+           .icon-what:hover{
+            color: #fff;
+           
+              }
+
+              .icon-twitter-1:hover{
+                color:  #fff;
+            }
+           
+           
+              .icon-facebook-official:hover{
+             color: #fff;
+           }
+
+           footer p{
+               color: #fff;
+               margin-bottom: 40px;
+               font-size: 27px;
+               letter-spacing: 1px;
+           }

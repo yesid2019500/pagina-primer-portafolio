@@ -1,0 +1,72 @@
+.contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+/* CON EL TAMAÑO DEL 33% SE POSICIONAN EN LA MISMA LINEA */
+.tabla {
+    background: rgb(206, 201, 201);
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border: 2px solid #333;
+    border-radius: 4px;
+    margin: 0 12px;
+    box-shadow: 0 0 4px 0 #333;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: #333333;
+}
+
+.tabla>h2 {
+    /* el display block no surge efecto porque los h2 ya lo tienes por defecto */
+    /* display: block; */
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+
+.tabla>H3 {
+    font-size: 30PX;
+    margin-bottom: 30px;
+}
+
+.tabla>p {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.tabla img {
+    width: 70px;
+    margin-bottom: 35px;
+}
+
+.boton{
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: green;
+    text-decoration: none;
+    color: rgb(212, 212, 142);
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.tabla:hover{
+    background: rgb(209, 209, 60);
+    color: rgb(138, 179, 138);
+    transition: 0.3s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}

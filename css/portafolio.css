@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #34495a;
+}
+
+.contenido{
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+ul{
+    position: relative;
+    width: 100%;
+    margin: 60px 0;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 15px;
+    text-transform: capitalize;
+-webkit-box-shadown: 10px 10px 5px 0 rgba(0,0,0,0.75);
+-moz-box-shadown: 10px 10px 5px 0 rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0;
+}
+
+ul li:hover, .active{
+background: #fff;
+color: #262626;
+cursor: pointer;
+}
+
+.contenido .fotos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenido .caja{
+    /* hay que poner 35 para que se ublien todas en un solo lado, pero el papa debe tener definido un aocho de 100% */
+    width: 32%;
+    height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    -webkit-box-shadown: 10px 10px 5px 0 rgba(0,0,0,0.75);
+-moz-box-shadown: 10px 10px 5px 0 rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0;
+}
+
+.contenido .caja img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    /* esto es para que abarque el 100 de la imagen, asi la imagen no se va ver destorcionada, sin importar su tamaño */
+    object-fit: cover;
+}
+
+img:hover{
+    transform: scale(1.5);
+    transition: all ease 1.5s;
+    cursor: pointer;
+}

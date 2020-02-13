@@ -1,0 +1,74 @@
+.social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    text-decoration: none;
+}
+
+/* .icon {
+font-size: 40px;
+text-decoration: none;
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+} */
+
+
+
+.ion-logo-facebook{
+     /* font-size: 80px;
+     color: #fff; */
+    background: #2e406e;
+    border-radius: 1rem 0 0 0;
+    text-decoration: none;
+    z-index: 20;
+
+   font-size: 60px;
+   color: #fff;
+   margin-left: 44px;
+   padding: 1rem;
+    
+}
+
+.ion-logo-twitter{
+    background: rgb(99, 175, 189);
+    font-size: 60px;
+    color: #fff;
+    margin-left: 50px;
+    padding: 1rem;
+    z-index: 20;
+}
+
+.ion-logo-whatsapp{
+    background: rgb(83, 197, 83);
+    border-radius: 1rem 0 0 0;
+    font-size: 60px;
+    color: #fff;
+    margin-left: 50px;
+    padding: 1rem;
+    z-index: 20;
+}
+
+.icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0,0,0,0.42);
+}
+
+/* ESTO ES POR SI AGREGAMOS MAS REDES SOCIALES, LA ULTIMA SIEMPRE TENDRA EL BORDE REDONDEADO */
+
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+
+}
+
+.icon:last-child{
+    border-radius: 1rem 0 0 0;
+}
